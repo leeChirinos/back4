@@ -5,7 +5,6 @@ import com.example.demo.Enum.Sectorizacion;
 import com.example.demo.Enum.TipoSocio;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
 
 import java.io.Serializable;
 import java.util.Date;

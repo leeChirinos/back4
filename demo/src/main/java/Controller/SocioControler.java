@@ -2,7 +2,6 @@ package Controller;
 import java.util.List;
 
 import DataServices.SocioDataServices;
-import com.example.demo.Entity.Sector;
 import com.example.demo.Entity.Socio;
 import com.example.demo.Enum.Activo;
 import com.example.demo.Enum.Sectorizacion;
@@ -71,13 +70,13 @@ public class SocioControler {
                 @RequestParam("fechaModificacion")     String fechaModificacion,
                 @RequestParam("fechaBaja")             String fechaBaja,
                 @RequestParam("tipoSocio")             String tipoSocio,
-                @RequestParam("Sectorizacion")         String sectorizacion,
-                //@RequestParam("Activo")                String activo
+                @RequestParam("Sectorizacion")         String sectorizacion
+                //@RequestParam("Activo")              String activo
         ){
             try{
                 Socio socio;
                 socio = new Socio(
-                        idSocio,                                 //idSocio
+                        idSocio,                                 //idSocio,
                         nombreSocio,                             //nombre,
                         cuit,                                    //cuit,
                         telefono,                                //telefono

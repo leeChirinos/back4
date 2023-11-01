@@ -27,7 +27,7 @@ public class SocioDataServices {
 
     public Socio getById(Long idSocio){
 
-        return socioRepository.findById(Long idSocio).orElse(new Socio());
+        return socioRepository.findById(Long idSocio);
     }
 
     public List<Socio> getAll(){
