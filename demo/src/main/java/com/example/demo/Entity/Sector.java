@@ -1,12 +1,8 @@
 package com.example.demo.Entity;
 
-import com.example.demo.Enum.Tipo_Socio;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 @Data
@@ -15,12 +11,12 @@ import java.util.List;
 public class Sector {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id_sector;
+    private Long idSector;
 
    @Enumerated(value=EnumType.STRING)
    private Sector sector;
 
-   //como funciona esta relación??? en consultas
+   //como funciona esta relación??? Consultar duda?
     @OneToMany(mappedBy = "sector")
    List<Socio> socioList;
 
